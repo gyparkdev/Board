@@ -1,0 +1,26 @@
+package org.zerock.service;
+
+import java.util.List;
+
+import org.zerock.domain.BoardVO;
+import org.zerock.domain.Criteria;
+
+public interface BoardService {
+
+	List<BoardVO> getList();
+	
+//	void register(BoardVO board);
+	Long register(BoardVO board);
+	
+	BoardVO get(Long bno);
+	
+	int modify(BoardVO board);
+	
+	int remove(Long bno);
+	
+	int viewCount(Long bno);
+	
+	List<BoardVO> getList(Criteria cri);
+	
+	int getTotal(Criteria cri);
+}
