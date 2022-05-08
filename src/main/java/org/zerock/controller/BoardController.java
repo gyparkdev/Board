@@ -29,13 +29,6 @@ public class BoardController {
 	private final BoardService service;
 	private final ReplyService replyService;
 	
-//	@GetMapping("/list")
-//	public void list(Model model) {
-//		
-//		log.info("list...............");
-//		model.addAttribute("list", service.getList());
-//	}
-	
 	//게시글 조회 Get
 	@GetMapping("/list")
 	public void list(Criteria cri, Model model) {
